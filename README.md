@@ -1,0 +1,2 @@
+# ok
+Super simple validation
