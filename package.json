@@ -1,6 +1,6 @@
 {
   "name": "oki",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Super simple validation",
   "main": "cjs/index.js",
   "jsnext:main": "es/index.js",
