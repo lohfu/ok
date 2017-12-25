@@ -11,8 +11,11 @@ module.exports = (validation) => function validate (attrs) {
 
   // tests: true means it is required, but has no other validation
   _.forEach(validation, (tests, key) => {
-    if (tests === true) tests = [ isNotNil ]
-    else if (!Array.isArray(tests)) tests = [ tests ]
+    if (tests === true) {
+      tests = [ isNotNil ]
+    } else if (!Array.isArray(tests)) {
+      tests = [ tests ]
+    }
 
     const value = _.get(attrs, key)
 
